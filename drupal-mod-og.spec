@@ -1,5 +1,6 @@
 %define		modname og
 Summary:	Drupal Organic groups Module
+Summary(pl):	Modu³ grup organicznych dla Drupala
 Name:		drupal-mod-%{modname}
 Version:	4.6.0
 Release:	0.3
@@ -17,7 +18,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Enable users to create and manage their own 'groups'. Each group can
-have subscribers, and maintains a a group home page where subscribers
+have subscribers, and maintains a group home page where subscribers
 communicate amongst themselves. They do so by posting the usual node
 types: blog, story, page, etc. A block is shown on the group home page
 which facilitates these posts. The block also provides summary
@@ -25,6 +26,17 @@ information about the group.
 
 Groups may be selective or not. Selective groups require approval in
 order to become a member.
+
+%description -l pl
+Ten modu³ pozwala u¿ytkownikom tworzyæ i zarz±dzaæ w³asnymi "grupami".
+Ka¿da grupa mo¿e mieæ subskrybentów i zarz±dza stron± domow± grupy
+gdzie subskrybenci komunikuj± siê miêdzy sob±. Robi± to poprzez
+wysy³anie zwyk³ych rodzajów obiektów: blogów, opowiadañ, stron itp.
+Na grupowej stronie domowej u³atwiaj±cej to wysy³anie jest pokazywany
+blok. Blok ten dostarcza tak¿e krótkiej informacji o grupie.
+
+Grupy mog± byæ selektywne lub nie. Grupy selektywne wymagaj±
+zatwierdzenia, aby zostaæ ich cz³onkiem.
 
 %prep
 %setup -q -n %{modname}
