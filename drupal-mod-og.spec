@@ -3,8 +3,7 @@ Summary:	Drupal Organic groups Module
 Summary(pl):	Modu³ grup organicznych dla Drupala
 Name:		drupal-mod-%{modname}
 Version:	4.6.0
-Release:	0.5
-Epoch:		0
+Release:	0.6
 License:	GPL
 Group:		Applications/WWW
 Source0:	http://drupal.org/files/projects/%{modname}-%{version}.tar.gz
@@ -15,7 +14,8 @@ Requires:	drupal >= 4.6.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_moddir		%{_datadir}/drupal/modules
+%define		_drupaldir	%{_datadir}/drupal
+%define		_moddir		%{_drupaldir}/modules
 
 %description
 Enable users to create and manage their own 'groups'. Each group can
