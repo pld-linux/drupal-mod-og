@@ -3,11 +3,11 @@ Summary:	Drupal Organic groups Module
 Summary(pl):	Modu³ grup organicznych dla Drupala
 Name:		drupal-mod-%{modname}
 Version:	4.6.0
-Release:	0.6
+Release:	0.7
 License:	GPL
 Group:		Applications/WWW
 Source0:	http://drupal.org/files/projects/%{modname}-%{version}.tar.gz
-# Source0-md5:	8111c047c7a1a620e5547b1682ad80a3
+# Source0-md5:	f038f4b8b2be4a29e42722a27fb8dd7a
 BuildRequires:	rpmbuild(macros) >= 1.194
 URL:		http://drupal.org/project/og
 Requires:	drupal >= 4.6.0
@@ -59,6 +59,13 @@ To create tables needed for Drupal Organic groups module, issue these commands:
 zcat %{_docdir}/%{name}-%{version}/og.mysql.gz | mysql drupal
 EOF
 fi
+
+%triggerpostun -- %{name} < 4.6.0-0.7
+%banner -e %{name} <<'EOF'
+You need to update your database:
+ALTER TABLE `og` ADD `register` int(1) NOT NULL default '0';
+ALTER TABLE `og` ADD `directory` int(11) NOT NULL default '1';
+EOF
 
 %files
 %defattr(644,root,root,755)
