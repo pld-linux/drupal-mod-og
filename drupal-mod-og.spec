@@ -1,6 +1,6 @@
 %define		modname og
 Summary:	Drupal Organic groups Module
-Summary(pl):	Modu³ grup organicznych dla Drupala
+Summary(pl.UTF-8):   ModuÅ‚ grup organicznych dla Drupala
 Name:		drupal-mod-%{modname}
 Version:	4.6.0
 Release:	0.7
@@ -28,16 +28,16 @@ information about the group.
 Groups may be selective or not. Selective groups require approval in
 order to become a member.
 
-%description -l pl
-Ten modu³ pozwala u¿ytkownikom tworzyæ i zarz±dzaæ w³asnymi "grupami".
-Ka¿da grupa mo¿e mieæ subskrybentów i zarz±dza stron± domow± grupy
-gdzie subskrybenci komunikuj± siê miêdzy sob±. Robi± to poprzez
-wysy³anie zwyk³ych rodzajów obiektów: blogów, opowiadañ, stron itp.
-Na grupowej stronie domowej u³atwiaj±cej to wysy³anie jest pokazywany
-blok. Blok ten dostarcza tak¿e krótkiej informacji o grupie.
+%description -l pl.UTF-8
+Ten moduÅ‚ pozwala uÅ¼ytkownikom tworzyÄ‡ i zarzÄ…dzaÄ‡ wÅ‚asnymi "grupami".
+KaÅ¼da grupa moÅ¼e mieÄ‡ subskrybentÃ³w i zarzÄ…dza stronÄ… domowÄ… grupy
+gdzie subskrybenci komunikujÄ… siÄ™ miÄ™dzy sobÄ…. RobiÄ… to poprzez
+wysyÅ‚anie zwykÅ‚ych rodzajÃ³w obiektÃ³w: blogÃ³w, opowiadaÅ„, stron itp.
+Na grupowej stronie domowej uÅ‚atwiajÄ…cej to wysyÅ‚anie jest pokazywany
+blok. Blok ten dostarcza takÅ¼e krÃ³tkiej informacji o grupie.
 
-Grupy mog± byæ selektywne lub nie. Grupy selektywne wymagaj±
-zatwierdzenia, aby zostaæ ich cz³onkiem.
+Grupy mogÄ… byÄ‡ selektywne lub nie. Grupy selektywne wymagajÄ…
+zatwierdzenia, aby zostaÄ‡ ich czÅ‚onkiem.
 
 %prep
 %setup -q -n %{modname}
